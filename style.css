@@ -18,19 +18,19 @@ width:300px;
 padding:20px;
 border-style:double;
 border-radius:25px; 
-margin:auto;
 position: fixed;
 top: 50%;
 left: 50%;
 margin-top: -50px;
 margin-left: -100px;
+margin: auto;
 }
 
-footer{
-clear: both;
-position: relative;
-height: 200px;
-margin-top: -200px;
+footer {
+position: fixed; 
+padding: 10px 10px 0px 10px; 
+bottom: 0; 
+width: 100%; 
+/* Height of the footer*/  
+height: 40px; 
 }
-
-

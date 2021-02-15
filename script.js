@@ -19,9 +19,9 @@ function compute(){
 
 
     //code block to show message on submit
-     var output="If you deposit "+ Principal +","+ "</br>"
-            " at an interest of "+ Rate +"%."+"</br>"
-            " You will receive an amount of "+ final_amount + "</br>"
+     var output="If you deposit "+ Principal +","
+            " at an interest of "+ Rate +"%."+"<br>"
+            " You will receive an amount of "+final_amount+
             " in the year "+ final_year
         document.getElementById("result").innerHTML=output
         console.log(output)
