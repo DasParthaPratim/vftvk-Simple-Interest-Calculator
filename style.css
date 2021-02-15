@@ -1,6 +1,9 @@
-body {background-color:black;font:arial;color:white}
-h1{color:grey;font:verdana}
-div.maindiv{background-color:white;color:black; width:300px; padding:20px;
+body 
+{background-color:black;font-family:arial;color:white}
+h1
+{color:grey;font-family:verdana}
+div.maindiv
+{background-color:white;color:black; width:300px; padding:20px;
 border:25px; margin: auto }
 
 
