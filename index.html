@@ -6,30 +6,29 @@
     <title>Simple Interest calculator</title>
     </head>
     <body>
-       <div class='maindiv'>
+       <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal" oninput="validate()">  <br/>
+        Amount <input type="number"  id="principal">  <br/>
         Rate <input type="range"  id="rate" min=1 max =20 step=0.25  value =10.25 onchange="showSlider()">
         <span id="slider">10.25 %</span> <br/>
-        No. of Years <input list="Years"  id="years"> 
-        <datalist id="Years">
-            <option value=1>
-            <option value=2>
-            <option value=3>
-            <option value=4>
-            <option value=5>
-            <option value=6>
-            <option value=7>
-            <option value=8>
-            <option value=9>
-            <option value=10>
-        </datalist>
+        No. of Years <select name="Years"  id="years"> 
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        </select>
         <br/>
-        Interest : <span id="result"></span><br>
+        Interest :</br> <span id="result"></span><br>
         <button id="submit" onclick="compute()">Compute Interest</button>
         <span id="result"></span><br>
        </div>
-       <footer>&copy Partha Pratim Das @TestProject</footer>
+       <footer>&copyPartha Pratim Das @TestProject</footer>
     </body>
 </html>

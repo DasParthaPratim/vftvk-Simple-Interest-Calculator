@@ -4,11 +4,13 @@ background-color:black;
 font-family:arial;
 color:white;
 }
+
 h1
 {
 color:grey;
 font-family:verdana;
 }
+
 div.maindiv
 {background-color:white; 
 color:black; 
@@ -16,8 +18,19 @@ width:300px;
 padding:20px;
 border-style:double;
 border-radius:25px; 
-margin-left: auto;
-margin-right: auto;
- }
+margin:auto;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+}
+
+footer{
+clear: both;
+position: relative;
+height: 200px;
+margin-top: -200px;
+}
 
 
