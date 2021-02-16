@@ -31,7 +31,7 @@ function compute(){
     function validate(){
     var amount= parseInt(document.getElementById("principal").value);
         if ((amount < 0) || (amount == 0)||(document.getElementById("principal").value == "")){
-            alert("Enter a Postive Amount");//shows aler message
+            alert("Enter a positive number");//shows aler message
             document.getElementById("principal").focus();//after clicking OK brings the focus to element
             javascript_abort();
         }
