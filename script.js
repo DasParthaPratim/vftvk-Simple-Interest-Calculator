@@ -30,7 +30,7 @@ function compute(){
     //function to check principal amount
     function validate(){
     var amount= parseInt(document.getElementById("principal").value);
-        if ((amount < 0) || (amount == 0)||(document.getElementById("principal").value == "")){
+        if ((amount < 0) || (amount == 0)||(amount == "")){
             alert("Enter a positive number");//shows aler message
             document.getElementById("principal").focus();//after clicking OK brings the focus to element
             javascript_abort();
@@ -43,7 +43,8 @@ function compute(){
     document.getElementById('slider').innerHTML = input //displays value to span
       console.log(input)
      }
+
      //function to abort JS execution in case of incorrect amount
      function javascript_abort(){
-        throw new Error('Pupose of this fuction is to abort execution,not an error');
+        throw new Error('Purpose of this fuction is to abort execution,it is not an error');
         }	
