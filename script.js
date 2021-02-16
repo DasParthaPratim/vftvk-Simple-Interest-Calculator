@@ -8,10 +8,10 @@ function compute(){
      //calling function to validate amount
     validate();
 
-     //code block to get final amount with interest 
+     //code block to get interest 
 
     Interest= (Principal*Years*Rate/100);
-    var final_amount=(parseInt(Principal)+parseInt(Interest));
+    
 
      //code to covert years to actual year
     var date=new Date();
@@ -19,9 +19,9 @@ function compute(){
     var final_year=(parseInt(present_year)+ parseInt(Years));
 
     //code block to show message on submit
-     var output="If you deposit "+ Principal+
-            ",<br>at an interest of "+ Rate +"%."+
-            "<br>You will receive an amount of "+ final_amount +
+     var output="<br>If you deposit "+ Principal+
+            ",<br>at an interest rate of "+ Rate +"%."+
+            "<br>You will receive an amount of "+ Interest +
             ",<br>in the year "+ final_year
         document.getElementById("result").innerHTML=output
         console.log(output)
