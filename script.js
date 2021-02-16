@@ -19,10 +19,10 @@ function compute(){
     var final_year=(parseInt(present_year)+ parseInt(Years));
 
     //code block to show message on submit
-     var output="<br>If you deposit "+ Principal+
-            ",<br>at an interest rate of "+ Rate +"%."+
-            "<br>You will receive an amount of "+ Interest +
-            ",<br>in the year "+ final_year
+     var output="<br>If you deposit "+ "<mark>"+ Principal+"</mark>"+
+            ",<br>at an interest rate of "+"<mark>"+ Rate +"%."+"</mark>"+
+            "<br>You will receive an amount of "+"<mark>"+ Interest +"</mark>"+
+            ",<br>in the year "+"<mark>"+final_year+"<mark>"
         document.getElementById("result").innerHTML=output
         console.log(output)
 }
@@ -39,8 +39,8 @@ function compute(){
     //function to display slider value
 
     function showSlider() {
-    var input= document.getElementById("rate").value //gets the vaue onchange
-    document.getElementById('slider').innerHTML = input //displays value to span
+    var input= document.getElementById("rate").value +" %"; //gets the vaue onchange
+    document.getElementById('slider').innerHTML = input ;//displays value to span
       console.log(input)
      }
 
